@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+* {
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  color: #445B6C;
+  font-size: 14px;
+  line-height: 1.47em;
+}
+
+a:link, a:visited {
+  color: #E2A25C;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.navHolder {
+  padding-left: 0;
+  justify-content: space-between;
+}
+.navLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /* Graham Jerome: */
+  font-size: 28px;
+  color: #445B6C;
+}
+.navLogo img {
+  display: inline-block;
+}
+.navLinks {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.navLinks li {
+  display: inline-block;
+}
+.navLinks li a:link {
+  font-size: 18px;
+  color: #7090A7;
+}
+.navLinks li a:hover {
+  color: #E2A25C;
+}
+
+#heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 250px;
+  background: url('../images/heroBanner.jpg') center bottom no-repeat;
+  background-size: cover;
+}
+#heroBanner h2 {
+  width: 65%;
+  margin: 0;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+
+.introHolder {
+  display: flex;
+  justify-content: space-between;
+}
+.profilePicture {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profilePicture img {
+  width: 200px;
+  height: auto;
+  margin-top: -120px;
+}
+.profilePicture a {
+  margin-top: 50px;
+  padding: 5px 8px;
+  background: #E2A25C;
+  color: #FFFFFF;
+  text-align: center;
+}
+.introText {
+  width: 65%;
+  align-self: flex-end;
+}
+.introText p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+  #root {
+    width: 768px;
+  }
+
+  .navLogo {
+    width: 50%;
+  }
+  .navLogo img {
+    width: 80px;
+    height: auto;
+    margin-right: 25px;
+  }
+  .navLinks {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #root {
+    width: 992px;
+  }
+}
