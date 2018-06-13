@@ -5,7 +5,7 @@ class Intro extends Component {
 
 	render() {
 		return (
-			<div>
+			<div id="about">
 				<div id="heroBanner">
 					<h2>Voted most likely to "do computer stuff" in high school.</h2>
 				</div>

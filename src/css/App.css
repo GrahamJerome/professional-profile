@@ -9,6 +9,17 @@ h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+section {
+  margin: 50px 0;
+}
+
+h2 span {
+  color: #E2A25C;
+}
+
+h3 {
+  color: #445B6C;
+}
 
 p {
   color: #445B6C;
@@ -24,11 +35,9 @@ a:hover {
   text-decoration: underline;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section
-{
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
+ul.list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 #root {
@@ -36,6 +45,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 .navHolder {
+  display: flex;
   padding-left: 0;
   justify-content: space-between;
 }
@@ -115,6 +125,69 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 .introText p {
   margin-bottom: 0;
+}
+
+.mainContent {
+  padding-top: 50px;
+}
+
+.skillsHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+}
+.experienceHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.experienceInfo {
+  width: 30%;
+}
+.experienceInfo p {
+  color: #82BFDA;
+}
+.experienceTasks {
+  /* width: 70%; */
+}
+.experienceTasks ul li {
+  margin-bottom: 25px;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+}
+.educationHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18.720px;
+}
+.educationHolder img {
+  width: 100%;
+  height: auto;
+}
+.educationLogo {
+  width: 20%;
+}
+.educationInfo {
+  width: 70%;
+}
+.educationInfo h3 {
+
+}
+.educationInfo h3 span {
+  font-size: 0.8em;
+  color: #82BFDA;
 }
 
 @media screen and (min-width:768px) {
