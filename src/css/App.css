@@ -23,8 +23,8 @@ h3 {
 
 p {
   color: #445B6C;
-  font-size: 14px;
-  line-height: 1.47em;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 
 a:link, a:visited {
@@ -170,7 +170,6 @@ ul.list-unstyled {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 18.720px;
 }
 .educationHolder img {
   width: 100%;
@@ -188,6 +187,20 @@ ul.list-unstyled {
 .educationInfo h3 span {
   font-size: 0.8em;
   color: #82BFDA;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hireInfo {
+  width: 40%;
+}
+.hireLinks {
+  width: 40%;
+  text-align: right;
 }
 
 @media screen and (min-width:768px) {
