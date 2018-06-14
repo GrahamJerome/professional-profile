@@ -1,0 +1,272 @@
+@media screen and (min-width: 375px) {
+
+	/* UNIVERSAL */
+	section {
+		padding: 0 25px;
+	}
+
+	/* INTRO */
+	.heroBanner {
+		/* general */
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		background: url('../images/heroBanner.jpg') center bottom no-repeat;
+		background-size: cover;
+
+		/* custom */
+		padding: 15px;
+		height: 150px;
+	}
+	.heroBanner h2 {
+		/* general */
+		color: #FFFFFF;
+
+		/* custom */
+		font-size: 24px;
+		text-align: center;
+	}
+	.introHolder {
+		/* general */
+		display: flex;
+
+		/* custom */
+		flex-direction: column;
+	}
+	.profilePicture {
+		/* general */
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.profilePicture img {
+		/* general */
+		border-radius: 50%;
+		border: 4px solid white;
+		align-self: center;
+
+		/* custom */
+	  width: 150px;
+	  height: 150px;
+	  margin-top: -25px;
+	}
+	.profilePicture a {
+		/* general */
+		padding: 5px 8px;
+		background: #E2A25C;
+	  color: #FFFFFF;
+	  text-align: center;
+
+		/* custom */
+	  margin: 25px 0;
+	}
+
+	/* CONTENT AREAS */
+	#mainContent h2 {
+		/* custom */
+		text-align: center;
+	}
+
+	/* SKILLS */
+	.skillsHolder {
+		/* general */
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	}
+	.skill {
+		/* custom */
+		width: 50%;
+	}
+
+	/* EXPERIENCE */
+	.experienceHolder {
+		/* general */
+	  display: flex;
+	  flex-direction: row;
+	  margin-bottom: 25px;
+	}
+	.experienceInfo {
+		/* custom */
+	  width: 100%;
+	  text-align: center;
+	}
+	.experienceInfo p {
+		/* general */
+	  color: #82BFDA;
+	}
+	.experienceTasks ul li {
+		/* genreal */
+	  margin-bottom: 25px;
+	}
+
+	/* EDUCATION */
+	.educationHolder {
+		/* general */
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+
+	  /* custom */
+	  margin: 25px 0;
+	}
+	.educationLogo {
+		/* custom */
+		text-align: center;
+	}
+	.educationLogo img {
+		/* general */
+		height: auto;
+
+		/* custom */
+	  width: 30%;
+	}
+	.educationInfo {
+		/* custom */
+	  width: 100%;
+	  text-align: center;
+	}
+	.educationInfo h3 span {
+	  font-size: 0.8em;
+	  color: #82BFDA;
+	}
+
+	/* CONTACT */
+	.contactHolder {
+		/* general */
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+
+	  /* custom */
+		text-align: center;
+	}
+	.hireLinks {
+		/* custom */
+		width: 100%;
+		order: 0;
+	}
+	.hireInfo {
+	  /* custom */
+	  order: 1;
+	}
+}
+
+/* Smaller Tablets */
+@media screen and (min-width: 576px) {
+
+	/* INTRO */
+	.heroBanner {
+		height: 250px;
+	}
+	.heroBanner h2 {
+		width: 70%;
+		font-size: 24px;
+		text-align: right;
+	}
+	.introHolder {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.profilePicture {
+		width: 45%;
+	}
+	.profilePicture img {
+	  width: 200px;
+	  height: 200px;
+	  margin-top: -100px;
+	}
+	.profilePicture a {
+		margin-top: 50px;
+	}
+	.introText {
+	  width: 55%;
+	  align-self: auto;
+	}
+	.introText p {
+	  margin-bottom: 0;
+	}
+
+	/* CONTENT AREAS */
+	#mainContent h2 {
+		text-align: left;
+	}
+
+	/* SKILLS */
+	.skillsHolder {
+		justify-content: space-between;
+	}
+	.skill {
+		width: auto;
+	}
+
+	/* EXPERIENCE */
+	.experienceHolder {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	/* EDUCATION */
+	.educationHolder {
+		justify-content: space-between
+	}
+	.educationLogo {
+	  width: 25%;
+	  align-self: center;
+	}
+	.educationLogo img {
+	  width: 80%;
+	}
+	.educationInfo {
+	  width: 70%;
+	  text-align: left;
+	}
+
+	/* CONTACT */
+	.contactHolder {
+	  justify-content: space-between;
+	}
+	.hireInfo {
+	  order: 0;
+	  width: 40%;
+	  text-align: left;
+	}
+	.hireLinks {
+		/* custom */
+		order: 1;
+	  width: 50%;
+	  text-align: right;
+	}
+}
+
+/* Tablets */
+@media screen and (min-width:768px) {
+  #root {
+    width: 768px;
+  }
+
+  .navLogo {
+    width: 50%;
+  }
+  .navLogo img {
+    width: 80px;
+    height: auto;
+    margin-right: 25px;
+  }
+  .navLinks {
+    width: 50%;
+  }
+
+  .heroBanner h2 {
+  	width: 65%;
+  	font-size: 42px;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 992px) {
+  #root {
+    width: 992px;
+  }
+}

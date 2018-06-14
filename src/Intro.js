@@ -5,8 +5,8 @@ class Intro extends Component {
 
 	render() {
 		return (
-			<div id="about">
-				<div id="heroBanner">
+			<section id="about">
+				<div className="heroBanner">
 					<h2>Voted most likely to "do computer stuff" in high school.</h2>
 				</div>
 
@@ -22,7 +22,7 @@ class Intro extends Component {
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

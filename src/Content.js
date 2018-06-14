@@ -114,9 +114,9 @@ class Content extends Component {
 		const { skills, experience, education } = this.state;
 
 		return (
-			<div className="mainContent">
-				<h2>{"<"}<span>Technical Skills</span> {"/>"}</h2>
+			<div id="mainContent">
 				<section id="skills">
+					<h2>{"<"}<span>Technical Skills</span> {"/>"}</h2>
 					<div className="skillsHolder">
 					{
 						skills.map((skill, i) => (
@@ -135,52 +135,52 @@ class Content extends Component {
 					</div>
 				</section>
 
-				<h2>{"<"}<span>Experience</span> {"/>"}</h2>
 				<section id="experience">
-				{
-					experience.map((job, i) => (
-						<div key={i} className="experienceHolder">
-							<div className="experienceInfo">
-								<h3>{job.role}</h3>
-								<p>{job.date}</p>
-								<h3>{job.company}</h3>
-								<p>{job.location}</p>
-							</div>
+					<h2>{"<"}<span>Experience</span> {"/>"}</h2>
+					{
+						experience.map((job, i) => (
+							<div key={i} className="experienceHolder">
+								<div className="experienceInfo">
+									<h3>{job.role}</h3>
+									<p>{job.date}</p>
+									<h3>{job.company}</h3>
+									<p>{job.location}</p>
+								</div>
 
-							<div className="experienceTasks">
-								<ul>
-								{
-									job.tasks.map((task, i) => (
-										<li key={i}>{task}</li>
-									))
-								}
-								</ul>
+								<div className="experienceTasks">
+									<ul>
+									{
+										job.tasks.map((task, i) => (
+											<li key={i}>{task}</li>
+										))
+									}
+									</ul>
+								</div>
 							</div>
-						</div>
-					))
-				}
+						))
+					}
 				</section>
 
-				<h2>{"<"}<span>Education</span> {"/>"}</h2>
 				<section id="education">
-				{
-					education.map((school, i) => (
-						<div key={i} className="educationHolder">
-							<div className="educationLogo">
-								<img src={school.image} />
-							</div>
+					<h2>{"<"}<span>Education</span> {"/>"}</h2>
+					{
+						education.map((school, i) => (
+							<div key={i} className="educationHolder">
+								<div className="educationLogo">
+									<img src={school.image} />
+								</div>
 
-							<div className="educationInfo">
-								<h3>{school.degree}, <span>{school.date}</span></h3>
-								<h3>{school.where}, <span>{school.location}</span></h3>
+								<div className="educationInfo">
+									<h3>{school.degree}, <span>{school.date}</span></h3>
+									<h3>{school.where}, <span>{school.location}</span></h3>
+								</div>
 							</div>
-						</div>
-					))
-				}
+						))
+					}
 				</section>
 
-				<h2>{"<"}<span>Goals</span> {"/>"}</h2>
 				<section id="goals">
+					<h2>{"<"}<span>Goals</span> {"/>"}</h2>
 					<p>
 						My goals are to stay up to date with the latest practices, and find creative ways to write effective code. I enjoy engaging with the development communities either online or in my area, to see how people come up with different approaches to solving problems. I’ve become quite addicted to online learning resources as well. I’m currently working on my second Nanodegree from Udacity in full-stack development (on weekends).<br/>
 						<br/>
@@ -190,19 +190,21 @@ class Content extends Component {
 					</p>
 				</section>
 
-				<h2>{"<"}<span>Hire Me</span> {"/>"}</h2>
 				<section id="contact">
-					<div className="hireInfo">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet purus viverra lorem eleifend mollis non ac erat. Phasellus ut finibus erat. Mauris tellus neque, auctor sed nisi sit amet, consequat consequat nibh. Aliquam erat volutpat. Phasellus pretium placerat risus. Donec eget porttitor neque.
-						</p>
-					</div>
+					<h2>{"<"}<span>Hire Me</span> {"/>"}</h2>
+					<div className="contactHolder">
+						<div className="hireInfo">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet purus viverra lorem eleifend mollis non ac erat. Phasellus ut finibus erat. Mauris tellus neque, auctor sed nisi sit amet, consequat consequat nibh. Aliquam erat volutpat. Phasellus pretium placerat risus. Donec eget porttitor neque.
+							</p>
+						</div>
 
-					<div className="hireLinks">
-						<h3><a href="tel:6137994994">613.799.4994</a></h3>
-						<h3><a href="mailto:graham.jerome@gmail.com">graham.jerome@gmail.com</a></h3>
-						<h3><a href="https://www.linkedin.com/in/grahamjerome/" target="_blank">LinkedIn</a></h3>
-						<h3><a href="https://github.com/GrahamJerome" target="_blank">GitHub</a></h3>
+						<div className="hireLinks">
+							<h3><a href="tel:6137994994">613.799.4994</a></h3>
+							<h3><a href="mailto:graham.jerome@gmail.com">graham.jerome@gmail.com</a></h3>
+							<h3><a href="https://www.linkedin.com/in/grahamjerome/" target="_blank">LinkedIn</a></h3>
+							<h3><a href="https://github.com/GrahamJerome" target="_blank">GitHub</a></h3>
+						</div>
 					</div>
 				</section>
 			</div>
