@@ -113,6 +113,7 @@
 	}
 	.educationLogo {
 		/* custom */
+		width: 100%;
 		text-align: center;
 	}
 	.educationLogo img {
