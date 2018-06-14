@@ -77,6 +77,7 @@
 	.skill {
 		/* custom */
 		width: 50%;
+		padding: 0 15px;
 	}
 
 	/* EXPERIENCE */
@@ -194,10 +195,10 @@
 
 	/* SKILLS */
 	.skillsHolder {
-		justify-content: space-between;
+		justify-content: flex-start;
 	}
 	.skill {
-		width: auto;
+		width: 33.3%;
 	}
 
 	/* EXPERIENCE */
@@ -206,17 +207,25 @@
 		justify-content: space-between;
 		margin-bottom: 50px;
 	}
+	.experienceInfo {
+		width: 30%;
+		text-align: left;
+	}
+	.experienceTasks {
+		width: 70%;
+	}
 
 	/* EDUCATION */
 	.educationHolder {
 		justify-content: space-between
 	}
 	.educationLogo {
-	  width: 25%;
+	  width: 30%;
 	  align-self: center;
+	  text-align: left;
 	}
 	.educationLogo img {
-	  width: 80%;
+	  width: 70%;
 	}
 	.educationInfo {
 	  width: 70%;
@@ -242,9 +251,6 @@
 
 /* Tablets */
 @media screen and (min-width:768px) {
-  #root {
-    width: 768px;
-  }
 
   .navLogo {
     width: 50%;
@@ -258,15 +264,46 @@
     width: 50%;
   }
 
-  .heroBanner h2 {
-  	width: 65%;
-  	font-size: 42px;
-  }
+	/* EXPERIENCE */
+  .experienceInfo {
+	  text-align: left;
+	}
+
+	/* EDUCATION */
+	.educationInfo {
+		width: 67%;
+	}
 }
 
 /* Larger Screens */
 @media screen and (min-width: 992px) {
-  #root {
-    width: 992px;
+
+	/* INTRO */
+	.profilePicture {
+		width: 33.3%;
+	}
+	.introText {
+		width: 66.6%;
+	}
+
+  /* SKILLS */
+  .skillsHolder {
+  	justify-content: space-between;
   }
+  .skill {
+  	padding: 0;
+  }
+}
+
+/* Typical Desktop */
+@media screen and (min-width: 1025px) {
+	#root {
+		width: 1025px;
+		margin: 0 auto;
+	}
+
+	/* SKILLS */
+	.skill {
+		width: auto;
+	}
 }
