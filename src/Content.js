@@ -200,6 +200,8 @@ class Content extends Component {
 						</div>
 					</div>
 				</section>
+
+				<p style={{color: "lightblue"}}>Powered by React.js</p>
 			</div>
 		);
 	}
