@@ -179,23 +179,16 @@ class Content extends Component {
 					}
 				</section>
 
-				<section id="goals">
-					<h2>{"<"}<span>Goals</span> {"/>"}</h2>
-					<p>
-						My goals are to stay up to date with the latest practices, and find creative ways to write effective code. I enjoy engaging with the development communities either online or in my area, to see how people come up with different approaches to solving problems. I’ve become quite addicted to online learning resources as well. I’m currently working on my second Nanodegree from Udacity in full-stack development (on weekends).<br/>
-						<br/>
-						I’ve worn many hats in my professional career over the last nine years - from designer, to developer, to project manager. I believe this gives me an array of valuable skills to bring to any company, and allows me to collaborate efficiently with other teams. My ambitions in this industry are to one day lead a team of designers and developers, producing something really unique in the tech space.<br/>
-						<br/>
-						I love what I do and want to grow with the industry, while looking for my next big challenge.
-					</p>
-				</section>
-
 				<section id="contact">
 					<h2>{"<"}<span>Hire Me</span> {"/>"}</h2>
 					<div className="contactHolder">
 						<div className="hireInfo">
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet purus viverra lorem eleifend mollis non ac erat. Phasellus ut finibus erat. Mauris tellus neque, auctor sed nisi sit amet, consequat consequat nibh. Aliquam erat volutpat. Phasellus pretium placerat risus. Donec eget porttitor neque.
+								My goals are to stay up to date with the latest practices, and find creative ways to write effective code. I enjoy engaging with the development communities either online or in my area, to see how people come up with different approaches to solving problems. I’ve become quite addicted to online learning resources as well. I’m currently working on my second Nanodegree from Udacity in full-stack development (on weekends).<br/>
+									<br/>
+									I’ve worn many hats in my professional career over the last nine years - from designer, to developer, to project manager. I believe this gives me an array of valuable skills to bring to any company, and allows me to collaborate efficiently with other teams. My ambitions in this industry are to one day lead a team of designers and developers, producing something really unique in the tech space.<br/>
+									<br/>
+									I love what I do and want to grow with the industry, while looking for my next big challenge.
 							</p>
 						</div>
 
